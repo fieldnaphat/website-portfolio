@@ -166,6 +166,12 @@ nav a:hover {
   color: undefined;
 }
 
+.logo .main-logo {
+  
+    width: 170px;
+    margin: -20px;
+}
+
 footer {
   text-align: center;
 }
