@@ -15,6 +15,12 @@
 
   --About-Text-Color: hsl(0, 0%, 0%);
   --Nav-bar-Text-Color: hsl(178, 100%, 26%);
+  --sun-color-change-one: hsl(45, 81%, 63%);
+  --sun-color-change-two:hsl(62, 100%, 84%);
+  --sun-color-change-three: hsl(21, 93%, 52%);
+  --Pin-location-color-change-one:hsl(9, 76%, 44%);
+  --Pin-location-color-change-two: hsl(120, 77%, 29%);
+  --Pin-location-color-change-three: hsl(155, 69%, 54%);
 
   /* Contact Page */
 
@@ -36,8 +42,8 @@
   /* Work Page  */
 
   --Work-div-background-Color: hsl(0, 0%, 83%);
-  
-  
+
+
 }
 
 // Weights
@@ -137,8 +143,11 @@ header {
 }
 
 .AboutMe {
+  display: flex;
   padding-top: 150px;
   text-align-last: center;
+  justify-content: center;
+  text-align: center;
   img {
     width: clamp(250px, 50%, 650px);
     justify-self: center;
@@ -687,15 +696,15 @@ input[type="tel"] {
 
 @keyframes sun-color-change {
   0% {
-    fill: #edc655;
+    fill: var(--sun-color-change-one);
   }
 
   50% {
-    fill: #fcffad;
+    fill: var(--sun-color-change-two);
   }
 
   100% {
-    fill: #f76414;
+    fill: var(--sun-color-change-three);
   }
 
   from {
@@ -718,15 +727,15 @@ input[type="tel"] {
 
 @keyframes pin-location-color-change {
   0% {
-    fill: #c7351b;
+    fill: var(--Pin-location-color-change-one);
   }
 
   50% {
-    fill: #118311;
+    fill: var(--Pin-location-color-change-two);
   }
 
   100% {
-    fill: #38da96;
+    fill: var(--Pin-location-color-change-three);
   }
 }
 
